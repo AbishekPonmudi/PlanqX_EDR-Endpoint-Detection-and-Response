@@ -1,4 +1,4 @@
-# Custom Endpoint Detection and Response (EDR) Solution for windows Environment 
+# PlanqX EDR (EDR)
 NOTE : THE DOCUMENTATION ARE MENTIONED BELOW , IF DOWNLOAD OR TESTING PLEASE ! VISIT HERE [installation process](#installation)
 
 ## Table of Contents
