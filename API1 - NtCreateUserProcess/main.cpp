@@ -1,0 +1,56 @@
+
+#include <winternl.h>
+#include <Windows.h>
+#include <iostream>
+#include "ntdll.h"
+
+#pragma comment(lib, "ntdll.lib")
+
+#define RTL_USER_PROCESS_PARAMETERS_NORMALIZED  0x01
+#ifndef NT_SUCCESS
+#define NT_SUCCESS(Status) (((NTSTATUS)(Status)) >= 0)
+#endif
+
+
+int main()
+{	
+	UNICODE_STRING NtPayloadPath;
+	RtlInitUnicodeString(&NtPayloadPath, (PWSTR)L"\\??\\C:\\Windows\\System32\\calc.exe");
+
+	PRTL_USER_PROCESS_PARAMETERS ProcessParameters = nullptr;
+	RtlCreateProcessParametersEx(&ProcessParameters, &NtPayloadPath, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, RTL_USER_PROCESS_PARAMETERS_NORMALIZED);
+
+	PS_CREATE_INFO CreateInfo = { 0 };
+	CreateInfo.Size = sizeof(CreateInfo);
+	CreateInfo.State = PsCreateInitialState;
+
+	PPS_ATTRIBUTE_LIST listatt = (PS_ATTRIBUTE_LIST*)RtlAllocateHeap(RtlProcessHeap(), HEAP_ZERO_MEMORY, sizeof(PS_ATTRIBUTE));
+
+	listatt->TotalLength = sizeof(PS_ATTRIBUTE_LIST) - sizeof(PS_ATTRIBUTE);
+	listatt->Attributes[0].Attribute = PS_ATTRIBUTE_IMAGE_NAME;
+	listatt->Attributes[0].Size = NtPayloadPath.Length;
+	listatt->Attributes[0].Value = (ULONG_PTR)NtPayloadPath.Buffer;
+
+	HANDLE hProcess = nullptr, hThread = nullptr;
+
+	NTSTATUS status = NtCreateUserProcess(&hProcess, &hThread, PROCESS_ALL_ACCESS, THREAD_ALL_ACCESS, nullptr, nullptr, NULL, NULL, ProcessParameters, &CreateInfo, listatt);
+
+	if (NT_SUCCESS(status)) {
+		unsigned int pid = GetProcessId(hProcess);
+		std::cout << "[*] Process Created Sucessfully" << std::endl;
+		std::cout << "[*] Process created with NtCreateProcess wihout using createProcess with Kernal Object :/" << std::endl;
+		std::cout << "[*] Process ID : " << pid << std::endl;
+		return 0;
+	}
+	else {
+		std::cerr << "Unable to create the Process" << std::endl;
+	}
+
+	RtlFreeHeap(RtlProcessHeap(), 0, listatt);
+	RtlDestroyProcessParameters(ProcessParameters);
+
+	if (hProcess) CloseHandle(hProcess);
+	if (hThread) CloseHandle(hThread);
+
+	return 0;
+}
