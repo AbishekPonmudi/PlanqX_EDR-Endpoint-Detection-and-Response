@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/AbishekPonmudi/PlanqX_EDR-Endpoint-Detection-and-Response/blob/main/screenshots/PlanqX%20EDR%20Logo.png?raw=true" alt="PlanqX EDR">
+  <img src="https://abishekponmudi.github.io/Abishek.site/images/planqx.png" alt="PlanqX EDR">
 </p>
 
 # Endpoint Detection and Response (EDR) Solution for windows Environment 
