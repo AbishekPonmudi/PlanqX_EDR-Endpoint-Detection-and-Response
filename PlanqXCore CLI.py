@@ -8,6 +8,7 @@ import hmac
 import hashlib
 import time
 from typing import Dict, List, Optional, Tuple
+from colorama import init, Fore, Style
 from dataclasses import dataclass
 from datetime import datetime
 
@@ -21,25 +22,28 @@ try:
     # from sys_src.main import *
 except ImportError as e:
     print(f"[!] Warning: Missing module - {e}")
+    
+    
+init(autoreset=True)  # Enables color support on Windows
 
 class Colors:
-    HEADER = '\033[95m'
-    BLUE = '\033[94m'
-    CYAN = '\033[96m'
-    GREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-    BLACK = '\033[30m'
-    RED = '\033[31m'
-    YELLOW = '\033[33m'
+    HEADER = Fore.MAGENTA
+    BLUE = Fore.BLUE
+    CYAN = Fore.CYAN
+    GREEN = Fore.GREEN
+    WARNING = Fore.YELLOW
+    FAIL = Fore.RED
+    ENDC = Style.RESET_ALL
+    BOLD = Style.BRIGHT
+    UNDERLINE = '\033[4m'  # colorama doesn't support underline, so keep this
+    BLACK = Fore.BLACK
+    RED = Fore.RED
+    YELLOW = Fore.YELLOW
     BG_GREEN = '\033[42m'
     BG_YELLOW = '\033[43m'
     BG_BLUE = '\033[44m'
     BG_WHITE = '\033[47m'
-    GRAY = '\033[90m'
+    GRAY = Fore.LIGHTBLACK_EX
 
 @dataclass
 class Service:
