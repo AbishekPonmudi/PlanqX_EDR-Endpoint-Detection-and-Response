@@ -1,4 +1,5 @@
 # Written By Haovx Server - side code -> Server CLI Panel
+
 import sys
 import os
 import subprocess
@@ -24,6 +25,9 @@ except ImportError as e:
     print(f"[!] Warning: Missing module - {e}")
     
     
+init(autoreset=True)  # Enables color support on Windows
+
+
 init(autoreset=True)  # Enables color support on Windows
 
 class Colors:
