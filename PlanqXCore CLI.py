@@ -23,6 +23,9 @@ try:
     # from sys_src.main import *
 except ImportError as e:
     print(f"[!] Warning: Missing module - {e}")
+    
+    
+init(autoreset=True)  # Enables color support on Windows
 
 
 init(autoreset=True)  # Enables color support on Windows
