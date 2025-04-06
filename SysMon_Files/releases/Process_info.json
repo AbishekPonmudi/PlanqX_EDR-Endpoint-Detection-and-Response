@@ -1,0 +1,736 @@
+ {
+ "Process Logs": [
+Number of Processes Found: 318
+    {
+      "PID": 4,
+    {
+      "PID": 140,
+    {
+      "PID": 180,
+    {
+      "PID": 588,
+    {
+      "PID": 964,
+    {
+      "PID": 648,
+    {
+      "PID": 728,
+    {
+      "PID": 1048,
+    {
+      "PID": 1068,
+    {
+      "PID": 1076,
+    {
+      "PID": 1208,
+    {
+      "PID": 1240,
+    {
+      "PID": 1260,
+    {
+      "PID": 1344,
+    {
+      "PID": 1412,
+    {
+      "PID": 1444,
+    {
+      "PID": 1504,
+    {
+      "PID": 1560,
+    {
+      "PID": 1640,
+    {
+      "PID": 1820,
+    {
+      "PID": 1844,
+    {
+      "PID": 2016,
+    {
+      "PID": 2024,
+    {
+      "PID": 2032,
+    {
+      "PID": 652,
+    {
+      "PID": 1628,
+    {
+      "PID": 1440,
+    {
+      "PID": 2004,
+    {
+      "PID": 2176,
+    {
+      "PID": 2192,
+    {
+      "PID": 2212,
+    {
+      "PID": 2240,
+    {
+      "PID": 2320,
+    {
+      "PID": 2328,
+    {
+      "PID": 2416,
+    {
+      "PID": 2452,
+    {
+      "PID": 2620,
+    {
+      "PID": 2660,
+    {
+      "PID": 2668,
+    {
+      "PID": 2904,
+    {
+      "PID": 2928,
+    {
+      "PID": 2992,
+    {
+      "PID": 3064,
+    {
+      "PID": 2884,
+    {
+      "PID": 3124,
+    {
+      "PID": 3160,
+    {
+      "PID": 3188,
+    {
+      "PID": 3256,
+    {
+      "PID": 3276,
+    {
+      "PID": 3288,
+    {
+      "PID": 3356,
+    {
+      "PID": 3372,
+    {
+      "PID": 3448,
+    {
+      "PID": 3468,
+    {
+      "PID": 3632,
+    {
+      "PID": 3752,
+    {
+      "PID": 3768,
+    {
+      "PID": 3852,
+    {
+      "PID": 3860,
+    {
+      "PID": 3880,
+    {
+      "PID": 3940,
+    {
+      "PID": 4108,
+    {
+      "PID": 4124,
+    {
+      "PID": 4172,
+    {
+      "PID": 4332,
+    {
+      "PID": 4516,
+    {
+      "PID": 4592,
+    {
+      "PID": 4712,
+    {
+      "PID": 4772,
+    {
+      "PID": 4780,
+    {
+      "PID": 4852,
+    {
+      "PID": 4876,
+    {
+      "PID": 4944,
+    {
+      "PID": 4956,
+    {
+      "PID": 5000,
+    {
+      "PID": 5088,
+    {
+      "PID": 5096,
+    {
+      "PID": 5104,
+    {
+      "PID": 5112,
+    {
+      "PID": 3648,
+    {
+      "PID": 4932,
+    {
+      "PID": 5144,
+    {
+      "PID": 5364,
+    {
+      "PID": 5372,
+    {
+      "PID": 5380,
+    {
+      "PID": 5452,
+    {
+      "PID": 5552,
+    {
+      "PID": 5564,
+    {
+      "PID": 5580,
+    {
+      "PID": 5608,
+    {
+      "PID": 5680,
+    {
+      "PID": 5728,
+    {
+      "PID": 5764,
+    {
+      "PID": 5772,
+    {
+      "PID": 5780,
+    {
+      "PID": 5904,
+    {
+      "PID": 5940,
+    {
+      "PID": 5952,
+    {
+      "PID": 6004,
+    {
+      "PID": 6088,
+    {
+      "PID": 6112,
+    {
+      "PID": 6120,
+    {
+      "PID": 5020,
+    {
+      "PID": 6156,
+    {
+      "PID": 6192,
+    {
+      "PID": 6228,
+    {
+      "PID": 6348,
+    {
+      "PID": 6388,
+    {
+      "PID": 7160,
+    {
+      "PID": 6640,
+    {
+      "PID": 7248,
+    {
+      "PID": 7368,
+      "Name": "spacedeskServiceTray.exe",
+       "Modules Loaded by Process": [
+        "C:\Program Files\datronicsoft\spacedesk\spacedeskServiceTray.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\wow64.dll",
+        "C:\WINDOWS\System32\wow64base.dll",
+        "C:\WINDOWS\System32\wow64win.dll",
+        "C:\WINDOWS\System32\wow64con.dll",
+        "C:\WINDOWS\System32\wow64cpu.dll"
+          "Child Process PID": "None",
+    },
+    {
+      "PID": 7464,
+      "Name": "Apoint.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\DellTPad\Apoint.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\SETUPAPI.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\System32\SHLWAPI.dll",
+        "C:\WINDOWS\System32\USER32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\System32\SHELL32.dll",
+        "C:\WINDOWS\System32\combase.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\SYSTEM32\WINMM.dll",
+        "C:\WINDOWS\System32\CRYPT32.dll",
+        "C:\WINDOWS\System32\WINTRUST.dll",
+        "C:\WINDOWS\SYSTEM32\POWRPROF.dll",
+        "C:\WINDOWS\SYSTEM32\cfgmgr32.DLL",
+        "C:\WINDOWS\System32\IMM32.DLL",
+        "C:\WINDOWS\SYSTEM32\UMPDC.dll",
+        "C:\WINDOWS\SYSTEM32\MSASN1.dll",
+        "C:\WINDOWS\system32\VXDIF.DLL",
+        "C:\WINDOWS\System32\ADVAPI32.dll",
+        "C:\WINDOWS\System32\sechost.dll",
+        "C:\WINDOWS\system32\DellTPad\Apoint.DLL",
+        "C:\WINDOWS\System32\comdlg32.dll",
+        "C:\WINDOWS\System32\shcore.dll",
+        "C:\WINDOWS\System32\ole32.dll",
+        "C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.2454_none_3e0b68a2e331ad60\COMCTL32.dll",
+        "C:\WINDOWS\System32\PSAPI.DLL",
+        "C:\WINDOWS\SYSTEM32\VERSION.dll",
+        "C:\WINDOWS\system32\DellTPad\EzAuto.dll",
+        "C:\WINDOWS\SYSTEM32\windows.storage.dll",
+        "C:\WINDOWS\SYSTEM32\kernel.appcore.dll",
+        "C:\WINDOWS\System32\bcryptPrimitives.dll",
+        "C:\WINDOWS\system32\uxtheme.dll",
+        "C:\WINDOWS\System32\OLEAUT32.dll",
+        "C:\WINDOWS\System32\clbcatq.dll",
+        "C:\WINDOWS\system32\propsys.dll",
+        "C:\WINDOWS\SYSTEM32\profapi.dll",
+        "C:\WINDOWS\SYSTEM32\apphelp.dll",
+        "C:\WINDOWS\SYSTEM32\edputil.dll",
+        "C:\WINDOWS\SYSTEM32\urlmon.dll",
+        "C:\WINDOWS\SYSTEM32\iertutil.dll",
+        "C:\WINDOWS\SYSTEM32\srvcli.dll",
+        "C:\WINDOWS\SYSTEM32\netutils.dll",
+        "C:\WINDOWS\SYSTEM32\SspiCli.dll",
+        "C:\WINDOWS\SYSTEM32\virtdisk.dll",
+        "C:\WINDOWS\SYSTEM32\Wldp.dll",
+        "C:\WINDOWS\SYSTEM32\MPR.dll",
+        "C:\WINDOWS\SYSTEM32\pcacli.dll",
+        "C:\WINDOWS\System32\sfc_os.dll",
+        "C:\WINDOWS\SYSTEM32\ServicingCommon.dll",
+        "C:\WINDOWS\System32\MSCTF.dll",
+        "C:\WINDOWS\SYSTEM32\WINSTA.dll",
+        "C:\WINDOWS\SYSTEM32\UIAutomationCore.DLL",
+        "C:\WINDOWS\SYSTEM32\OLEACC.dll"
+          "Child Process PID": 8484,
+          "Child Process PID": 8704,
+          "Child Process PID": 8712,
+    },
+    {
+      "PID": 6312,
+    {
+      "PID": 6356,
+    {
+      "PID": 8096,
+    {
+      "PID": 8448,
+    {
+      "PID": 8484,
+    {
+      "PID": 8524,
+      "Name": "sihost.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\sihost.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\System32\combase.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\System32\sechost.dll",
+        "C:\WINDOWS\System32\advapi32.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\system32\CoreMessaging.dll",
+        "C:\WINDOWS\SYSTEM32\ntmarta.dll",
+        "C:\WINDOWS\SYSTEM32\kernel.appcore.dll",
+        "C:\WINDOWS\System32\bcryptPrimitives.dll",
+        "C:\WINDOWS\System32\user32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\IMM32.DLL",
+        "C:\WINDOWS\System32\clbcatq.dll",
+        "C:\WINDOWS\system32\desktopshellext.dll",
+        "C:\WINDOWS\System32\OLEAUT32.dll",
+        "C:\WINDOWS\System32\shlwapi.dll",
+        "C:\WINDOWS\System32\shcore.dll",
+        "C:\WINDOWS\SYSTEM32\wtsapi32.dll",
+        "C:\WINDOWS\SYSTEM32\WINSTA.dll",
+        "C:\Windows\System32\fcon.dll",
+        "C:\Windows\System32\Windows.Shell.ServiceHostBuilder.dll",
+        "C:\WINDOWS\system32\uxtheme.dll",
+        "C:\Windows\System32\ClipboardServer.dll",
+        "C:\Windows\System32\RMCLIENT.dll",
+        "C:\WINDOWS\system32\activationmanager.dll",
+        "C:\WINDOWS\System32\AppointmentActivation.dll",
+        "C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll",
+        "C:\Windows\System32\modernexecserver.dll",
+        "C:\WINDOWS\SYSTEM32\twinapi.appcore.dll",
+        "C:\WINDOWS\SYSTEM32\wintypes.dll",
+        "C:\Windows\System32\usermgrproxy.dll",
+        "C:\WINDOWS\SYSTEM32\usermgrcli.dll",
+        "C:\Windows\System32\OneCoreUAPCommonProxyStub.dll",
+        "C:\WINDOWS\system32\CoreUIComponents.dll",
+        "C:\WINDOWS\system32\ExecModelClient.dll",
+        "C:\Windows\System32\windowmanagement.dll",
+        "C:\Windows\System32\OneCoreCommonProxyStub.dll",
+        "C:\Windows\System32\NotificationPlatformComponent.dll",
+        "C:\WINDOWS\system32\execmodelproxy.dll",
+        "C:\Windows\System32\AppContracts.dll",
+        "C:\Windows\System32\windows.system.launcher.dll",
+        "C:\Windows\System32\Windows.Storage.dll",
+        "C:\WINDOWS\system32\PackageStateChangeHandler.dll",
+        "C:\Windows\System32\UiaManager.dll",
+        "C:\WINDOWS\system32\ShareHost.dll",
+        "C:\WINDOWS\system32\twinui.appcore.dll",
+        "C:\Windows\System32\AudioSes.dll",
+        "C:\Windows\System32\daxexec.dll",
+        "C:\Windows\System32\container.dll",
+        "C:\WINDOWS\system32\mssrch.dll",
+        "C:\WINDOWS\system32\TQUERY.DLL",
+        "C:\WINDOWS\system32\SearchIndexerCore.dll",
+        "C:\WINDOWS\system32\CoreShellExtFramework.dll",
+        "C:\WINDOWS\system32\twinui.pcshell.dll",
+        "C:\WINDOWS\system32\wincorlib.DLL",
+        "C:\WINDOWS\system32\UIAutomationCore.DLL",
+        "C:\WINDOWS\system32\CRYPTBASE.DLL",
+        "C:\Windows\System32\InputHost.dll",
+        "C:\WINDOWS\system32\activationclient.dll",
+        "C:\WINDOWS\system32\windowsudk.shellcommon.dll",
+        "C:\WINDOWS\system32\USERENV.dll",
+        "C:\WINDOWS\SYSTEM32\windows.staterepositoryclient.dll",
+        "C:\WINDOWS\system32\AppXDeploymentClient.dll",
+        "C:\WINDOWS\System32\ole32.dll",
+        "C:\Windows\System32\Windows.StateRepositoryPS.dll",
+        "C:\WINDOWS\SYSTEM32\licensemanagerapi.dll",
+        "C:\WINDOWS\SYSTEM32\capauthz.dll",
+        "C:\Windows\System32\PROPSYS.dll",
+        "C:\Windows\System32\profapi.dll",
+        "C:\Windows\System32\CFGMGR32.dll",
+        "C:\WINDOWS\SYSTEM32\apphelp.dll",
+        "C:\WINDOWS\System32\SHELL32.dll",
+        "C:\Windows\System32\edputil.dll",
+        "C:\Windows\System32\urlmon.dll",
+        "C:\Windows\System32\iertutil.dll",
+        "C:\Windows\System32\netutils.dll",
+        "C:\Windows\System32\srvcli.dll",
+        "C:\Windows\System32\MPR.dll",
+        "C:\WINDOWS\SYSTEM32\mrmcorer.dll",
+        "C:\WINDOWS\SYSTEM32\bcp47mrm.dll",
+        "C:\WINDOWS\SYSTEM32\policymanager.dll",
+        "C:\Windows\System32\msvcp110_win.dll",
+        "C:\WINDOWS\system32\bcrypt.dll",
+        "C:\Windows\System32\threadpoolwinrt.dll",
+        "C:\Windows\System32\Windows.Security.Integrity.dll"
+          "Child Process PID": 12584,
+          "Child Process PID": 8840,
+          "Child Process PID": 14428,
+    },
+    {
+      "PID": 8544,
+      "Name": "svchost.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\svchost.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\System32\combase.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\SYSTEM32\kernel.appcore.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\System32\bcryptPrimitives.dll",
+        "C:\WINDOWS\System32\user32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\IMM32.DLL",
+        "C:\WINDOWS\System32\sechost.dll",
+        "c:\windows\system32\microsoft.bluetooth.userservice.dll",
+        "c:\windows\system32\WppRecorderUM.dll",
+        "C:\WINDOWS\SYSTEM32\cfgmgr32.dll",
+        "C:\WINDOWS\SYSTEM32\powrprof.dll",
+        "c:\windows\system32\policymanager.dll",
+        "c:\windows\system32\msvcp110_win.dll",
+        "C:\WINDOWS\SYSTEM32\UMPDC.dll",
+        "C:\WINDOWS\System32\clbcatq.dll",
+        "C:\Windows\System32\Microsoft.Bluetooth.Proxy.dll",
+        "C:\WINDOWS\System32\shcore.dll",
+        "C:\WINDOWS\System32\OLEAUT32.dll",
+        "C:\WINDOWS\SYSTEM32\bluetoothapis.dll",
+        "c:\windows\system32\DEVOBJ.dll",
+        "C:\Windows\System32\DevDispItemProvider.dll",
+        "C:\Windows\System32\OneCoreUAPCommonProxyStub.dll"
+          "Child Process PID": "None",
+    },
+    {
+      "PID": 8552,
+      "Name": "svchost.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\svchost.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\System32\combase.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\SYSTEM32\kernel.appcore.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\System32\bcryptPrimitives.dll",
+        "C:\WINDOWS\System32\user32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\IMM32.DLL",
+        "C:\WINDOWS\System32\sechost.dll",
+        "c:\windows\system32\cdpusersvc.dll",
+        "C:\WINDOWS\System32\OLEAUT32.dll",
+        "C:\WINDOWS\SYSTEM32\powrprof.dll",
+        "C:\WINDOWS\SYSTEM32\cfgmgr32.dll",
+        "c:\windows\system32\cdp.dll",
+        "C:\WINDOWS\SYSTEM32\UMPDC.dll",
+        "c:\windows\system32\iertutil.dll",
+        "C:\WINDOWS\System32\advapi32.dll",
+        "c:\windows\system32\srvcli.dll",
+        "c:\windows\system32\netutils.dll",
+        "C:\WINDOWS\SYSTEM32\policymanager.dll",
+        "c:\windows\system32\msvcp110_win.dll",
+        "C:\WINDOWS\SYSTEM32\gamestreamingext.dll",
+        "c:\windows\system32\bcrypt.dll",
+        "C:\WINDOWS\System32\clbcatq.dll",
+        "C:\Windows\System32\OneCoreCommonProxyStub.dll",
+        "C:\Windows\System32\Windows.Security.Authentication.Web.Core.dll",
+        "C:\WINDOWS\SYSTEM32\wintypes.dll",
+        "C:\WINDOWS\SYSTEM32\usermgrcli.dll",
+        "C:\Windows\System32\vaultcli.dll",
+        "C:\Windows\System32\usermgrproxy.dll",
+        "C:\WINDOWS\System32\SspiCli.dll",
+        "C:\WINDOWS\System32\shcore.dll",
+        "C:\WINDOWS\System32\CRYPT32.dll",
+        "C:\WINDOWS\System32\MSASN1.dll",
+        "c:\windows\system32\ncrypt.dll",
+        "c:\windows\system32\NTASN1.dll",
+        "C:\WINDOWS\system32\ncryptprov.dll",
+        "C:\WINDOWS\system32\CRYPTBASE.dll",
+        "C:\Windows\System32\Windows.Networking.Connectivity.dll",
+        "C:\Windows\System32\twinapi.appcore.dll",
+        "c:\windows\system32\WINHTTP.dll",
+        "C:\WINDOWS\System32\WS2_32.dll",
+        "C:\WINDOWS\system32\mswsock.dll",
+        "C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL",
+        "C:\WINDOWS\SYSTEM32\WINNSI.DLL",
+        "C:\WINDOWS\System32\NSI.dll",
+        "C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL",
+        "C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL",
+        "c:\windows\system32\winsqlite3.dll",
+        "C:\Windows\System32\USERENV.dll",
+        "C:\Windows\System32\profapi.dll",
+        "C:\WINDOWS\System32\DPAPI.DLL",
+        "C:\Windows\System32\Windows.Devices.Radios.dll",
+        "C:\WINDOWS\system32\BthRadioMedia.dll",
+        "C:\WINDOWS\system32\DEVOBJ.dll",
+        "C:\Windows\System32\UnifiedConsent.dll",
+        "C:\WINDOWS\SYSTEM32\ntmarta.dll",
+        "c:\windows\system32\PROPSYS.dll",
+        "C:\Windows\System32\Windows.CloudStore.dll",
+        "C:\WINDOWS\SYSTEM32\wlanapi.dll",
+        "C:\WINDOWS\SYSTEM32\MobileNetworking.dll",
+        "c:\windows\system32\dsreg.dll",
+        "C:\WINDOWS\SYSTEM32\rmclient.dll",
+        "C:\WINDOWS\SYSTEM32\webio.dll",
+        "C:\WINDOWS\SYSTEM32\DNSAPI.dll",
+        "C:\Windows\System32\rasadhlp.dll",
+        "C:\WINDOWS\System32\fwpuclnt.dll",
+        "C:\WINDOWS\system32\schannel.DLL",
+        "C:\WINDOWS\system32\ncryptsslp.dll",
+        "C:\Windows\System32\Windows.Web.dll",
+        "C:\Windows\System32\aadWamExtension.dll",
+        "C:\Windows\System32\AppExtension.dll",
+        "C:\Windows\System32\Windows.StateRepositoryPS.dll",
+        "C:\Windows\System32\Windows.CloudStore.Schema.Shell.dll"
+          "Child Process PID": "None",
+    },
+    {
+      "PID": 8628,
+      "Name": "svchost.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\svchost.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\System32\combase.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\SYSTEM32\kernel.appcore.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\System32\bcryptPrimitives.dll",
+        "C:\WINDOWS\System32\user32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\IMM32.DLL",
+        "C:\WINDOWS\System32\sechost.dll",
+        "c:\windows\system32\webthreatdefusersvc.dll",
+        "C:\WINDOWS\System32\clbcatq.dll",
+        "C:\Windows\System32\ThreatResponseEngine.dll",
+        "C:\Windows\System32\usermgrproxy.dll",
+        "C:\Windows\System32\OneCoreCommonProxyStub.dll",
+        "C:\WINDOWS\SYSTEM32\wintypes.dll",
+        "C:\Windows\System32\vaultcli.dll",
+        "C:\WINDOWS\SYSTEM32\usermgrcli.dll"
+          "Child Process PID": "None",
+    },
+    {
+      "PID": 8704,
+      "Name": "ApRemote.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\DellTPad\ApRemote.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\System32\user32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\SYSTEM32\ntmarta.dll",
+        "C:\WINDOWS\SYSTEM32\cfgmgr32.dll",
+        "C:\WINDOWS\System32\IMM32.DLL"
+          "Child Process PID": "None",
+    },
+    {
+      "PID": 8712,
+      "Name": "HidFind.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\DellTPad\HidFind.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\ADVAPI32.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\System32\sechost.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\System32\USER32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\System32\SETUPAPI.dll",
+        "C:\WINDOWS\SYSTEM32\HID.DLL",
+        "C:\WINDOWS\SYSTEM32\cfgmgr32.DLL",
+        "C:\WINDOWS\System32\IMM32.DLL",
+        "C:\WINDOWS\system32\uxtheme.dll",
+        "C:\WINDOWS\System32\combase.dll",
+        "C:\WINDOWS\System32\MSCTF.dll",
+        "C:\WINDOWS\SYSTEM32\DEVOBJ.dll",
+        "C:\WINDOWS\System32\WINTRUST.dll",
+        "C:\WINDOWS\System32\CRYPT32.dll",
+        "C:\WINDOWS\SYSTEM32\MSASN1.dll"
+          "Child Process PID": "None",
+    },
+    {
+      "PID": 8780,
+      "Name": "svchost.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\svchost.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\ucrtbase.dll",
+        "C:\WINDOWS\System32\combase.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\SYSTEM32\kernel.appcore.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\System32\bcryptPrimitives.dll",
+        "C:\WINDOWS\System32\user32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+        "C:\WINDOWS\System32\IMM32.DLL",
+        "C:\WINDOWS\System32\sechost.dll",
+        "c:\windows\system32\wpnuserservice.dll",
+        "c:\windows\system32\iertutil.dll",
+        "C:\WINDOWS\System32\advapi32.dll",
+        "c:\windows\system32\srvcli.dll",
+        "c:\windows\system32\netutils.dll",
+        "C:\WINDOWS\System32\clbcatq.dll",
+        "C:\WINDOWS\System32\wpncore.dll",
+        "C:\WINDOWS\SYSTEM32\wintypes.dll",
+        "C:\Windows\System32\NotificationController.dll",
+        "C:\WINDOWS\System32\OLEAUT32.dll",
+        "C:\WINDOWS\System32\shcore.dll",
+        "C:\Windows\System32\RMCLIENT.dll",
+        "C:\WINDOWS\SYSTEM32\powrprof.dll",
+        "C:\Windows\System32\UMPDC.dll",
+        "C:\WINDOWS\SYSTEM32\usermgrcli.dll",
+        "C:\Windows\System32\OneCoreUAPCommonProxyStub.dll",
+        "C:\Windows\System32\QuietHours.dll",
+        "C:\WINDOWS\SYSTEM32\windows.storage.dll",
+        "C:\WINDOWS\System32\shlwapi.dll",
+        "C:\WINDOWS\SYSTEM32\profapi.dll",
+        "C:\WINDOWS\SYSTEM32\winsta.dll",
+        "C:\WINDOWS\SYSTEM32\policymanager.dll",
+        "C:\WINDOWS\System32\msvcp110_win.dll",
+        "C:\WINDOWS\System32\winsqlite3.dll",
+        "C:\WINDOWS\SYSTEM32\twinapi.appcore.dll",
+        "C:\Windows\System32\execmodelclient.dll",
+        "C:\WINDOWS\system32\execmodelproxy.dll",
+        "C:\WINDOWS\system32\uxtheme.dll",
+        "C:\WINDOWS\System32\MSCTF.dll",
+        "C:\WINDOWS\SYSTEM32\wtsapi32.dll",
+        "C:\Windows\System32\Windows.Networking.Connectivity.dll",
+        "C:\Windows\System32\TileDataRepository.dll",
+        "C:\Windows\System32\StateRepository.Core.dll",
+        "C:\Windows\System32\Windows.StateRepository.dll",
+        "C:\Windows\System32\Windows.StateRepositoryPS.dll",
+        "C:\Windows\System32\Windows.StateRepositoryClient.dll",
+        "C:\Windows\System32\appresolver.dll",
+        "C:\Windows\System32\USERENV.dll",
+        "C:\WINDOWS\System32\ole32.dll",
+        "C:\WINDOWS\system32\propsys.dll",
+        "C:\Windows\System32\Bcp47Langs.dll",
+        "C:\Windows\System32\threadpoolwinrt.dll",
+        "C:\Windows\System32\wpnapps.dll",
+        "C:\Windows\System32\wpnclient.dll",
+        "C:\Windows\System32\Windows.CloudStore.dll",
+        "C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll",
+        "C:\Windows\System32\msxml6.dll",
+        "C:\Windows\System32\NotificationControllerPS.dll",
+        "C:\WINDOWS\SYSTEM32\mrmcorer.dll",
+        "C:\WINDOWS\SYSTEM32\bcp47mrm.dll",
+        "C:\Windows\System32\CapabilityAccessManagerClient.dll",
+        "C:\Windows\System32\usermgrproxy.dll",
+        "C:\WINDOWS\SYSTEM32\wlanapi.dll",
+        "C:\WINDOWS\SYSTEM32\MobileNetworking.dll",
+        "C:\Windows\System32\IPHLPAPI.DLL",
+        "C:\WINDOWS\System32\NSI.dll",
+        "C:\Windows\System32\dusmapi.dll",
+        "C:\Windows\System32\wcmapi.dll",
+        "C:\Windows\System32\urlmon.dll",
+        "C:\WINDOWS\SYSTEM32\ntmarta.dll",
+        "C:\Windows\System32\ContentDeliveryManager.Utilities.dll",
+        "C:\Windows\System32\Windows.ApplicationModel.dll",
+        "C:\WINDOWS\system32\windowsudk.shellcommon.dll",
+        "C:\Windows\System32\wosc.dll",
+        "C:\Windows\System32\dmiso8601utils.dll",
+        "C:\Windows\System32\ShellCommonCommonProxyStub.dll"
+          "Child Process PID": "None",
+    },
+    {
+      "PID": 8808,
+    {
+      "PID": 8872,
+    {
+      "PID": 8912,
+      "Name": "Apntex.exe",
+       "Modules Loaded by Process": [
+        "C:\WINDOWS\system32\DellTPad\Apntex.exe",
+        "C:\WINDOWS\SYSTEM32\ntdll.dll",
+        "C:\WINDOWS\System32\KERNEL32.DLL",
+        "C:\WINDOWS\System32\KERNELBASE.dll",
+        "C:\WINDOWS\System32\ADVAPI32.dll",
+        "C:\WINDOWS\System32\msvcrt.dll",
+        "C:\WINDOWS\System32\sechost.dll",
+        "C:\WINDOWS\System32\RPCRT4.dll",
+        "C:\WINDOWS\System32\USER32.dll",
+        "C:\WINDOWS\System32\win32u.dll",
+        "C:\WINDOWS\System32\GDI32.dll",
+        "C:\WINDOWS\System32\gdi32full.dll",
+        "C:\WINDOWS\System32\msvcp_win.dll",
+ 
