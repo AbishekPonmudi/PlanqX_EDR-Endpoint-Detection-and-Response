@@ -1,4 +1,23 @@
-// written and tested by havox @cp OG
+/*   @Planqx EDR -Malware Scanner code 
+ *						@Author : Written By @Havox :)
+
+ *    Permission is hereby granted, free of charge, to any person obtaining
+ *    this piece of code, and you can deal in the Software without restriction,
+ *    including without limitation the rights to use and modify and to permit
+ *	  persons to whom the Software is furnished to do so,subject to the following
+ *	  conditions:
+ *
+ *    The above copyright notice and this permission notice shall be included
+ *    in all copies or substantial portions of the Software.
+ *
+ *    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ *    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ *    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ *    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ *    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ *    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ *    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
 
 // this tool enum the file and scan with IOC of hashes to find any malicious files
 
