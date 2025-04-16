@@ -1,122 +1,125 @@
-/*Written by Havox*/
+/* Written by Havox */
+
+// This code Does to enumerate all the  running Process and also the imported Modules 
+// along with the imported API, DLL dynamically via Syscall or sysenter and IAT from Import_Descriptor_Table from PE
+
+// Checkout the Header INformation gathering code from PEheaderAnalysis.cpp
 
 #include <Windows.h>
 #include <Psapi.h>
 #include <iostream>
 #include <tchar.h>
 #include <fstream>
-#include <TlHelp32.h>  // for createToolhelp32snapshot
+#include "HeaderAnalysis.h"
+#include <TlHelp32.h>  // for CreateToolhelp32Snapshot
+#pragma comment(lib, "Psapi.lib")
 
-void enumchildprocess(DWORD processID, std::wofstream& outputfile) {  // to enumerate the child process 
+void enumChildProcess(DWORD processID, std::wofstream& outputFile, std::wofstream& outputFile1) {
     HANDLE hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
     if (hSnap == INVALID_HANDLE_VALUE) {
-        std::cerr << "Error: CreateToolhelp32snapshot not found" << std::endl;
+        std::cerr << "Error: CreateToolhelp32Snapshot failed" << std::endl;
         return;
     }
     PROCESSENTRY32 ProcessEntry;
     ProcessEntry.dwSize = sizeof(PROCESSENTRY32);
 
-    bool haschildren = false;
+    bool hasChildren = false;
     if (Process32First(hSnap, &ProcessEntry)) {
-        while (Process32Next(hSnap, &ProcessEntry)) {
-            if (ProcessEntry.th32ParentProcessID == processID) { // if processID of the child Realtionship to the ParentID then it print ProcessID of child
-                std::wcout << "Child Process PID: " << ProcessEntry.th32ProcessID << std::endl;
-                outputfile << "          \"Child Process PID\": " << ProcessEntry.th32ProcessID << ",\n";
-                haschildren = true;
+        do {
+            if (ProcessEntry.th32ParentProcessID == processID) {
+                outputFile << "          \"Child Process PID\": " << ProcessEntry.th32ProcessID << ",\n";
+                //PrintImportsAPI(ProcessEntry.th32ProcessID,outputFile1);
+                hasChildren = true;
             }
-        }
+        } while (Process32Next(hSnap, &ProcessEntry));
     }
-    if (!haschildren) {
-        std::wcout << "No child processes." << std::endl;
-        outputfile << "          \"Child Process PID\": \"None\",\n";
+    if (!hasChildren) {
+        outputFile << "          \"Child Process PID\": \"None\",\n";
     }
     CloseHandle(hSnap);
 }
 
-int main() {
-    DWORD aProcess[1024]; // array to store the process IDs
-    DWORD cbNeeded;  // Returned by the EnumProcesses to store like number of bytes used by EnumProcesses 
-    DWORD cProcesses; // number of process 
+void EnumProcessId() {
 
-    std::wofstream outputfile("Process_info.json");
-    if (!outputfile) {
-        std::cerr << "Error: Unable to Capture the Event log :( "
-            << "\nError -> File create error / Privilege Error";
-        return 1;
+    std::wofstream outputFile("Process_information.json", std::ios::app);
+
+    std::wofstream outputFile1("Modules_Imported.json", std::ios::app);
+
+    if (!outputFile) {
+        std::cerr << "Error: Unable to create output file." << std::endl;
+        return;
+    }
+    if (!outputFile1) {
+        std::cerr << "Error: Unable to create output file." << std::endl;
+        return;
     }
 
-    std::cout << "Starting the Process scanning " << std::endl;
-    outputfile << " {\n \"Process Logs\": [\n";
 
-    if (!EnumProcesses(aProcess, sizeof(aProcess), &cbNeeded)) {   // to enumerate the process 
-        std::cerr << "Error: EnumProcesses failed. Unable to fetch PIDs :( ." << std::endl;
-        std::cerr << "Check if you have sufficient privileges or if the system is compatible :( ." << std::endl;
-        return 1;
+    DWORD aProcess[1024];
+    DWORD cbNeeded;
+    DWORD cProcess;
+
+    if (!EnumProcesses(aProcess, sizeof(aProcess), &cbNeeded)) {
+        std::cerr << "Error: EnumProcesses failed." << std::endl;
+        return;
     }
-    cProcesses = cbNeeded / sizeof(DWORD);  // taking the total length of the PID by reference of using cbneeded bytes stores by EnumProcessess
-    std::cout << "Number of Processes: " << cProcesses << std::endl;
 
-    outputfile << "Number of Processes Found: " << cProcesses << "\n";
+    cProcess = cbNeeded / sizeof(DWORD);
+    outputFile << "{\n  \"Number of Processes\": " << cProcess << ",\n  \"Processes\": [\n";
 
-    // Iterate through the processes 
-    for (unsigned int i = 0; i < cProcesses; i++) {
+    bool firstProcess = true;
+    for (unsigned int i = 0; i < cProcess; i++) {
         if (aProcess[i] != 0) {
-            std::cout << "Process ID: " << aProcess[i] << std::endl;
-            outputfile << "    {\n";
-            outputfile << "      \"PID\": " << aProcess[i] << ",\n";
+            if (!firstProcess) outputFile << "    },\n";
+            firstProcess = false;
 
-            // Getting the process name using ID
+            outputFile << "    {\n      \"PID\": " << aProcess[i] << ",\n";
+            PrintImportsAPI(aProcess[i], outputFile1);
+
             HANDLE hProcess = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, aProcess[i]);
             if (hProcess) {
-                TCHAR sProcessName[MAX_PATH] = TEXT("");
+                TCHAR sProcessName[MAX_PATH] = TEXT("Unknown");
                 HMODULE hMod;
-                DWORD cbneededName;
+                DWORD cbNeededName;
 
-                if (EnumProcessModules(hProcess, &hMod, sizeof(hMod), &cbneededName)) {
-                    GetModuleBaseName(hProcess, hMod, sProcessName, sizeof(sProcessName) / sizeof(TCHAR));
+                if (EnumProcessModules(hProcess, &hMod, sizeof(hMod), &cbNeededName)) {
+                    GetModuleBaseName(hProcess, hMod, sProcessName, MAX_PATH);
                 }
-                std::wcout << "Process Name: " << sProcessName << std::endl;
-                outputfile << "      \"Name\": \"" << sProcessName << "\",\n";
+                outputFile << "      \"Name\": \"" << sProcessName << "\",\n";
 
-                HMODULE hMods[1024]; // return the process name of each module
+                HMODULE hMods[1024];
                 DWORD cbModulesNeeded;
-
                 if (EnumProcessModules(hProcess, hMods, sizeof(hMods), &cbModulesNeeded)) {
                     DWORD numModules = cbModulesNeeded / sizeof(HMODULE);
-
-                    std::cout << "Modules Loaded by the Process:" << std::endl;
-                    outputfile << "       \"Modules Loaded by Process\": [\n";
+                    outputFile << "       \"Modules Loaded by Process\": [\n";
 
                     for (DWORD j = 0; j < numModules; j++) {
-                        TCHAR moduleName[1000];
-                        if (GetModuleFileNameEx(hProcess, hMods[j], moduleName, sizeof(moduleName) / sizeof(TCHAR))) {
-                            std::wcout << moduleName << std::endl;
-                            outputfile << "        \"" << moduleName << "\"";
-                            if (j < numModules - 1) {
-                                outputfile << ",";
-                            }
-                            outputfile << "\n";
+                        TCHAR moduleName[MAX_PATH];
+                        if (GetModuleFileNameEx(hProcess, hMods[j], moduleName, MAX_PATH)) {
+                            outputFile << "        \"" << moduleName << "\"";
+                            if (j < numModules - 1) outputFile << ",";
+                            outputFile << "\n";
                         }
                     }
+                    outputFile << "       ]\n";
                 }
                 else {
-                    std::cerr << "Error: Could not find the Modules for the Process." << std::endl;
+                    outputFile << "      \"Modules Loaded by Process\": \"Error: Could not fetch modules.\",\n";
                 }
 
-                // Call the function to enumerate child processes and print the output
-                enumchildprocess(aProcess[i], outputfile);
-
-                std::cout << "\n______________________________________________" << std::endl;
-                outputfile << "    },\n";
+                enumChildProcess(aProcess[i], outputFile, outputFile1);
+                CloseHandle(hProcess);
             }
             else {
-                std::cerr << "Unable to find the Process :( " << aProcess[i] << std::endl;
-                std::cout << "______________________________________________\n" << std::endl;
+                outputFile << "      \"Name\": \"Access Denied - Check you Dump Brain :/ \"\n";
             }
         }
     }
-    outputfile << "]\n}";  // Close the JSON structure
+    outputFile << "    }\n  ]\n}";
+    outputFile.close();
+}
 
-    std::cout << "Process enumeration complete!" << std::endl;
+int main() {
+    while (true) EnumProcessId();
     return 0;
 }
