@@ -2,9 +2,11 @@
   <img src="https://abishekponmudi.github.io/Abishek.site/images/planqx.png" alt="PlanqX EDR">
 </p>
 
-![Language](https://img.shields.io/badge/Language-C++-blue)
-![OS](https://img.shields.io/badge/OS-Windows-blue)
-![Maintained](https://img.shields.io/badge/Maintained-Yes-brightgreen)
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue" />
+  <img src="https://img.shields.io/badge/OS-Windows-blue" />
+  <img src="https://img.shields.io/badge/Maintained-Yes-brightgreen" />
+</p>
 
 
 # Endpoint Detection and Response (EDR) Solution for windows Environment 
