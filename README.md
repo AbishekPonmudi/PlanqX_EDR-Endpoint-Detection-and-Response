@@ -6,7 +6,7 @@
 NOTE : THE DOCUMENTATION ARE MENTIONED BELOW , IF DOWNLOAD OR TESTING PLEASE ! VISIT HERE [installation process](#installation)
 
 ##See Demo (Installation and configuration part)
-[![Watch the video](https://drive.google.com/file/d/1d40pjPEzXpGWIg8lgeoD5Ntx7Mpk25s4/view?usp=sharing)
+[Watch the demo video](https://drive.google.com/file/d/1d40pjPEzXpGWIg8lgeoD5Ntx7Mpk25s4/view?usp=sharing)
 
 
 ## Table of Contents
